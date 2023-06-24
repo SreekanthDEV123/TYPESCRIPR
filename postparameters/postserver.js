@@ -23,6 +23,9 @@ app.post("/signin", [auth], function (req, res) {
         res.status(401).json({ signin: "Failed" });
     }
 });
-app.listen(process.env.PORT, function () {
+app.get("/sign", function (req, res) {
+    res.send("server success");
+});
+app.listen(7686, function () {
     console.log("success");
 });
