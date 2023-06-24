@@ -26,6 +26,6 @@ app.post("/signin", [auth], function (req, res) {
 app.get("/sign", function (req, res) {
     res.send("server success");
 });
-app.listen(7686, function () {
+app.listen(7680, function () {
     console.log("success");
 });
